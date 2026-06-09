@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>TechInsumos | Blog de Tecnologia e Sustentabilidade</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="light-mode">
+    
+    <!-- Header com Navegação -->
+    <header class="header">
+        <div class="header-container container">
+            <a href="#" class="logo">
+                <i class="fas fa-microchip"></i>
+                <span>Tech<span class="logo-highlight">Insumos</span></span>
+            </a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="#" class="nav-link active">Home</a></li>
+                    <li><a href="#" class="nav-link">Artigos</a></li>
+                    <li><a href="#" class="nav-link">Tecnologias</a></li>
+                    <li><a href="#" class="nav-link">Sustentabilidade</a></li>
+                    <li><a href="#" class="nav-link">Sobre</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button class="search-btn" aria-label="Buscar">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-container container">
+                <div class="hero-content">
+                    <div class="hero-tag">
+                        <span class="tag-pulse"></span>
+                        Tecnologia e Sustentabilidade
+                    </div>
+                    <h1 class="hero-title">
+                        Tecnologia para reduzir <span class="gradient-text">desperdício de insumos</span>
+                    </h1>
+                    <p class="hero-description">
+                        Descubra como ferramentas digitais, sensores e sistemas inteligentes estão revolucionando a gestão de recursos na agricultura, indústria e logística.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">+40%</span>
+                            <span class="stat-label">Redução de custos</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">-25%</span>
+                            <span class="stat-label">Desperdício de insumos</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">IoT+IA</span>
+                            <span class="stat-label">Tecnologias integradas</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-image-bg"></div>
+                    <i class="fas fa-chart-line"></i>
+                    <i class="fas fa-leaf"></i>
+                    <i class="fas fa-microchip"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feed de Notícias -->
+        <section class="news-feed">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag">Feed de Notícias</div>
+                    <h2 class="section-title">Últimas <span class="gradient-text">Tecnologias</span></h2>
+                    <p class="section-subtitle">Inovações que estão transformando a gestão de insumos e recursos</p>
+                </div>
+                <div class="news-grid" id="newsGrid"></div>
+            </div>
+        </section>
+
+        <!-- Destaques / Principais Tecnologias -->
+        <section class="tech-showcase">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag">Tecnologias em Destaque</div>
+                    <h2 class="section-title">Principais <span class="gradient-text">Soluções</span></h2>
+                    <p class="section-subtitle">Ferramentas que estão revolucionando a eficiência produtiva</p>
+                </div>
+                <div class="tech-grid">
+                    <div class="tech-card">
+                        <div class="tech-icon"><i class="fas fa-robot"></i></div>
+                        <h3>Inteligência Artificial</h3>
+                        <p>Analisa dados e prevê desperdícios, otimizando o uso de recursos e reduzindo perdas.</p>
+                    </div>
+                    <div class="tech-card">
+                        <div class="tech-icon"><i class="fas fa-wifi"></i></div>
+                        <h3>Internet das Coisas</h3>
+                        <p>Sensores inteligentes para monitoramento em tempo real de processos e estoques.</p>
+                    </div>
+                    <div class="tech-card">
+                        <div class="tech-icon"><i class="fas fa-link"></i></div>
+                        <h3>Blockchain</h3>
+                        <p>Rastreabilidade segura e transparente em toda cadeia de suprimentos.</p>
+                    </div>
+                    <div class="tech-card">
+                        <div class="tech-icon"><i class="fas fa-chart-bar"></i></div>
+                        <h3>WMS/ERP</h3>
+                        <p>Gestão automatizada de estoque e produção para máxima eficiência.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefícios -->
+        <section class="benefits">
+            <div class="container">
+                <div class="benefits-wrapper">
+                    <div class="benefits-content">
+                        <div class="section-tag">Vantagens Competitivas</div>
+                        <h2 class="section-title">Benefícios da <span class="gradient-text">Transformação Digital</span></h2>
+                        <p class="section-subtitle">Adotar tecnologias inteligentes vai além da economia financeira</p>
+                        <div class="benefits-list">
+                            <div class="benefit-item">
+                                <i class="fas fa-chart-line"></i>
+                                <div>
+                                    <h4>Redução de custos</h4>
+                                    <p>Otimização de recursos e eliminação de desperdícios</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-tint"></i>
+                                <div>
+                                    <h4>Economia de insumos</h4>
+                                    <p>Uso racional de água, energia e matérias-primas</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-recycle"></i>
+                                <div>
+                                    <h4>Menos desperdício</h4>
+                                    <p>Gestão precisa e controle de perdas logísticas</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-leaf"></i>
+                                <div>
+                                    <h4>Sustentabilidade</h4>
+                                    <p>Redução do impacto ambiental e pegada ecológica</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="benefits-stats">
+                        <div class="stat-card">
+                            <span class="stat-big">50%</span>
+                            <p>redução de desperdício na indústria alimentícia</p>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-big">25%</span>
+                            <p>menos uso de insumos com Agricultura 4.0</p>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-big">20%</span>
+                            <p>redução com WMS na armazenagem</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h3>Quer saber mais sobre tecnologias sustentáveis?</h3>
+                    <p>Assine nossa newsletter e receba conteúdos exclusivos sobre inovação e eficiência produtiva.</p>
+                    <div class="cta-buttons">
+                        <button class="btn-primary">Inscreva-se <i class="fas fa-arrow-right"></i></button>
+                        <button class="btn-outline">Ver todos os artigos</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i class="fas fa-microchip"></i>
+                        <span>Tech<span class="logo-highlight">Insumos</span></span>
+                    </div>
+                    <p>Tecnologia para um futuro mais sustentável e eficiente.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="links-column">
+                        <h4>Conteúdo</h4>
+                        <ul>
+                            <li><a href="#">Artigos</a></li>
+                            <li><a href="#">Tecnologias</a></li>
+                            <li><a href="#">Cases</a></li>
+                            <li><a href="#">Webinars</a></li>
+                        </ul>
+                    </div>
+                    <div class="links-column">
+                        <h4>Sobre</h4>
+                        <ul>
+                            <li><a href="#">Quem somos</a></li>
+                            <li><a href="#">Contato</a></li>
+                            <li><a href="#">Parceiros</a></li>
+                            <li><a href="#">Trabalhe conosco</a></li>
+                        </ul>
+                    </div>
+                    <div class="links-column">
+                        <h4>Recursos</h4>
+                        <ul>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Newsletter</a></li>
+                            <li><a href="#">E-books</a></li>
+                            <li><a href="#">Suporte</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TechInsumos. Todos os direitos reservados.</p>
+                <div class="footer-legal">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
